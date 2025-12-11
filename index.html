@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Jaden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background: radial-gradient(circle at bottom, aliceblue, #6dbaef);
+            font-family: "Pixelify Sans", sans-serif;
+        }
+        
+        /* Changed selector from #h1 to #heading-container for clarity, 
+           and updated the h1 selector to target the heading inside */
+        #heading-container h1 {
+            /* font-family: Pixelify Sans; - Not needed if set on body or using quotes */
+            background-image: linear-gradient(#6ebfad, blue);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text; /* Include standard property as well */
+            font-size: 50px;
+            text-align: center;
+            animation: flicker 1s infinite alternate;
+            margin-top: 50px; /* Added some top margin */
+        }
+        
+        
+        @keyframes flicker {
+            0% {
+                opacity: 1;
+                text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+            }
+            20% {
+                opacity: 0.8;
+            }
+            40% {
+                opacity: 1;
+            }
+            60% {
+                opacity: 0.7;
+                text-shadow: none;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.9;
+                text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+            }
+        }
+        
+        #info {
+            text-align: center;
+            list-style: none;
+            padding: 0;
+            color: #0065FF; /* Added color for readability */
+            font-size: 20px;
+        }
+
+        #info ul {
+            list-style: none;
+            padding: 50px;
+        }
+
+        #info li {
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="heading-container">
+        <h1>Jaden</h1>
+    </div>
+    
+    <div id="info">
+        <ul>
+            <li>Hello, I'm Jaden. I'm a very cool man and I like to code.</li>
+            <li>I'm currently a 7th grader in Nativity Worcester.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
