@@ -1,1 +1,1 @@
-let jaden = getElementById(h1)textContent="Jadihen"
+let jaden = getElementById(heading-container)textContent="Jadihen"
