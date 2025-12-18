@@ -10,6 +10,10 @@
      <link rel="icon" href="logo.svg" type="image/svg+xml">
     
     <style>
+        #chat-container { width: 300px; border: 1px solid #ccc; padding: 10px; }
+#chat-window { height: 200px; overflow-y: auto; border-bottom: 1px solid #ddd; margin-bottom: 10px; }
+#output p { margin: 5px 0; padding: 5px; background: #f1f1f1; border-radius: 5px; }
+
         body {
              background-size: cover;
               background-position: center;
@@ -80,6 +84,7 @@
     </style>
 </head>
 <body>
+    
     <div id="heading-container">
         <h1>Jaden</h1>
     </div>
@@ -90,6 +95,14 @@
             <li>I'm currently a 7th grader in Nativity Worcester.</li>
         </ul>
     </div>
+    <div id="chat-container">
+    <div id="chat-window">
+        <div id="output"></div>
+    </div>
+    <input id="message" type="text" placeholder="Type a message..." />
+    <button id="send">Send</button>
+</div>
+
 
 </body>
 </html>
